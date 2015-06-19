@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+      <meta charset="utf-8" />
+      <style type="text/css">
+         body{ margin:40px; background:#FFFFFF; }
+         #rectangleCanvas{ background:#666; border:#000 1px solid; }
+      </style>
+      <title></title>
+   </head>
+   <body>
+       <p>
+       Pins: <input type ="checkbox" id="pinCheck">
+       Obstacles: <input type ="checkbox" id="obsCheck">
+       Connections: <input type ="checkbox" id="connCheck">
+       <script>
+           var x = document.getElementById("pinCheck");
+           var y = document.getElementById("connCheck");
+           var z = document.getElementById("obsCheck");
+           
+           x.checked = true;
+           y.checked = true;
+           z.checked = true;
+       </script>
+       <button onclick="checkBoxes()">Refresh Image</button>
+       <button onclick="resetZoom()">Reset Zoom</button>
+       </p>
+
+      <canvas id="rectangleCanvas" width="1000" height="1000"></canvas>
+      <script src="drawDesign.js"></script>
+      <script src="data.js"></script>
+      <script>dataFunction();</script>
+      
+   </body>
+</html>

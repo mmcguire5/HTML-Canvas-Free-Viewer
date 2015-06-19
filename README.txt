@@ -1,0 +1,1 @@
+These files, given a JavaScript file containing specific objects, will create an HTML canvas with functonalities such as zoom-point and selection of objects to be viewed.
